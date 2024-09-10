@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #ff9900;
+  --bg1: #1b1c1c;
+  --bg2: #ffffff;
+  --darker: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg1);
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  background: var(--bg2);
+  opacity: 50%;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-rows: 5rem auto;
+  box-shadow: 0px 0px 50px 1px var(--bg2);
+  row-gap: 5px;
+}
+
+.display {
+  background: var(--darker);
+  opacity: 80%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  cursor: text;
+  color: white;
+  font-size: 2.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border: 4px solid #ffffff;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #4e4e4e, #5d5d5d);
+  box-shadow: 10px 10px 40px #adacac, -10px -10px 40px #bcb8b8;
+}
+button:hover {
+  opacity: 70%;
+}
+button:active {
+  opacity: 30%;
+}
+
+.left {
+  display: grid;
+  grid-row: repeat(5, 1fr);
+}
+
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  height: 3.2rem;
+  width: 3.2rem;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+
+  /* font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; */
+}
+
+.right {
+  display: grid;
+
+  grid-template-rows: 4fr 1fr;
+}
+
+.right .nums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.n1,
+.n2,
+.n3,
+.n4,
+.n5,
+.n6,
+.n7,
+.n8,
+.n9,
+.n10,
+.n11,
+.n12 {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  background: var(--bg1);
+  opacity: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.o1 {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  background: var(--bg1);
+  opacity: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}

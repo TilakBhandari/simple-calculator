@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <div class="display"></div>
+        <div class="buttons">
+          <div class="left">
+            <button class="l1 operator-btn" onclick="appendToDisplay('+')">
+              +
+            </button>
+            <button class="l2 operator-btn" onclick="appendToDisplay('-')">
+              -
+            </button>
+            <button class="l1 operator-btn" onclick="appendToDisplay('*')">
+              x
+            </button>
+            <button class="l4 operator-btn" onclick="appendToDisplay('/')">
+              /
+            </button>
+            <button class="l5 operator-btn" onclick="clearDisplay()">C</button>
+          </div>
+          <div class="right">
+            <div class="nums">
+              <button class="n1" onclick="appendToDisplay('7')">7</button>
+              <button class="n2" onclick="appendToDisplay('8')">8</button>
+              <button class="n3" onclick="appendToDisplay('9')">9</button>
+              <button class="n4" onclick="appendToDisplay('4')">4</button>
+              <button class="n5" onclick="appendToDisplay('5')">5</button>
+              <button class="n6" onclick="appendToDisplay('6')">6</button>
+              <button class="n7" onclick="appendToDisplay('1')">1</button>
+              <button class="n8" onclick="appendToDisplay('2')">2</button>
+              <button class="n9" onclick="appendToDisplay('3')">3</button>
+              <button class="n10" onclick="appendToDisplay('0')">0</button>
+              <button class="n11" onclick="appendToDisplay('.')">.</button>
+              <button class="n12" onclick="calculate('=')">=</button>
+            </div>
+            <div class="others">
+              <button class="o1" onclick="backSpace()">
+                <i class="fa-solid fa-delete-left"></i>
+              </button>
+              <div class="o2"></div>
+              <div class="o3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
